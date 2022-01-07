@@ -1,11 +1,53 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+
+<body class="bg-white mx-auto h-auto w-full flex flex-wrap flex-col justify-center">
+
+    <nav class="flex-1 h-full w-full p-8 justify-center">
+        <div class="flex flex-wrap items-center justify-start lg:flex-row flex-row mx-auto max-w-6xl">
+            <div class="lg:flex-none order-1 flex-1 lg:basis-1/4 md:basis-[15%] basis-1/2">
+                <div class="flex lg:justify-center md:justify-center justify-start">
+                    <img class="w-28 h-auto" src="./assets/img/nav/Logo.svg" alt="Logo" srcset="">
+                </div>
+            </div>
+            <div
+                class="lg:mt-0 md:mt-0 mt-5 flex-1 lg:order-2 md:order-2 order-3 lg:basis-1/2 md:basis-[70%] basis-full font-light w-full">
+                <div class="flex flex-wrap space-x-12 lg:justify-end justify-center items-center uppercase text-sm">
+                    <a href="./index.html" class="">
+                        Home
+                    </a>
+                    <a href="#" class="">
+                        Properties
+                    </a>
+                    <a href="#" class="">
+                        Agent
+                    </a>
+                    <a href="#" class="">
+                        Blog
+                    </a>
+                </div>
+               
+            </div>
+            <div
+                class="flex-none lg:pl-12 pl-0 lg:order-3 md:order-3 order-2 lg:basis-1/4 md:basis-[15%] basis-1/2">
+                <div class="flex lg:justify-start md:justify-center justify-end">
+                    <button class="uppercase text-sm text-[#1DAEFF] font-light bg-transparent py-1 px-6 rounded-lg border border-[#1DAEFF]">
+                        Log In
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
 
 
 
@@ -13,4 +55,5 @@
 
 
 </body>
+
 </html>
