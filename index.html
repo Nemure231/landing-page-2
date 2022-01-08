@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./assets/base/tailwindcss/output.css">
+    <!-- <link rel="stylesheet" href="./assets/base/tailwindcss/output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,6 +22,7 @@
             font-family: 'lufga-sb';
             src: url('./assets/font/lufga/lufga_semibold.otf') format("opentype");
         }
+
         @font-face {
             font-family: 'lufga-r';
             src: url('./assets/font/lufga/lufga_regular.otf') format("opentype");
@@ -85,25 +87,38 @@
         <!-- Section One -->
 
         <section class="max-w-6xl h-auto mx-auto relative">
-            <div class="bg-cover bg-clip-content p-3 bg-no-repeat lg:bg-right md:bg-center bg-center rounded-[3rem] h-auto w-full"
+            <div class="lg:bg-cover md:bg-cover sm:bg-cover bg-contain bg-clip-content lg:p-2 md:p-2 sm:p-2 p-0 bg-no-repeat lg:bg-right md:bg-center bg-center rounded-[3rem] h-auto w-full"
                 style="background-image: url('./assets/img/section_1/img_1.png');">
-                <div class="lg:py-28 lg:px-20 md:py-16 md:px-6 sm:py-12 sm:px-6 py-12 px-3">
+                <div class="lg:hidden md:hidden sm:hidden block -mb-14">
+
+                    <h1 class="px-3 text-center text-xl custom-font-lufga-semibold"
+                    style="line-height: 2rem;">
+                    Easy way to find a perfect property
+                </h1>
+                <div class="px-3 text-center custom-font-lufga-regular text-gray-500 text-xs w-full h-max leading-relaxed"
+                style="line-height: 2rem;">
+                We provide a complete service for the sale,
+                purchase or rental of real estate.
+            </div>
+                </div>
+                <div class="lg:py-28 lg:px-20 md:py-16 md:px-6 sm:py-12 sm:px-6 py-48 px-3">
                     <div class="flex flex-wrap flex-col p-3">
-                        <div class="lg:w-1/2 md:w-3/5 sm:w-3/5 w-full h-auto lg:mb-10 md:mb-10 sm:mb-3 mb-2">
-                            <h1 class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl custom-font-lufga-semibold" 
+                        <div
+                            class="lg:block md:block sm:block hidden lg:w-1/2 md:w-3/5 sm:w-3/5 w-full h-auto lg:mb-10 md:mb-10 sm:mb-3 mb-2">
+                            <h1 class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl custom-font-lufga-semibold"
                                 style="line-height: 4rem;">
                                 Easy way to find a perfect property
                             </h1>
                         </div>
-                        <div
-                            class="flex-1 custom-font-lufga-regular text-gray-500 lg:text-lg md:text-lg text-sm lg:w-2/5 md:w-2/5 sm:w-2/5 w-3/4 h-max leading-relaxed lg:mb-10 md:mb-10 sm:mb-3 mb-2" 
+                        <div class="lg:block md:block sm:block hidden flex-1 custom-font-lufga-regular text-gray-500 lg:text-lg md:text-lg text-sm lg:w-2/5 md:w-2/5 sm:w-2/5 w-3/4 h-max leading-relaxed lg:mb-10 md:mb-10 sm:mb-3 mb-2"
                             style="line-height: 2rem;">
                             We provide a complete service for the sale,
                             purchase or rental of real estate.
                         </div>
 
-                        <div class="flex-1 lg:w-11/12 md:w-11/12 w-full">
-                            <div class="flex flex-row font-light lg:text-sm md:text-sm text-xs custom-font-lufga-medium">
+                        <div class="lg:block md:block sm:block hidden flex-1 lg:w-11/12 md:w-11/12 w-full">
+                            <div
+                                class="flex flex-row font-light lg:text-sm md:text-sm text-xs custom-font-lufga-medium">
                                 <button class="bg-white lg:px-6 md:px-6 px-3 py-2 uppercase rounded-t-xl">
                                     Rent
                                 </button>
@@ -175,11 +190,82 @@
         </section>
         <!-- End Section One -->
 
+        <!-- Section one.Two -->
+        <section class="lg:hidden md:hidden sm:hidden block max-w-xl h-auto mx-auto relative -mt-48 px-3">
+            <div class="w-full">
+                <div class="flex flex-row text-xs custom-font-lufga-medium">
+                    <button class="bg-white px-3 py-2 uppercase rounded-t-xl">
+                        Rent
+                    </button>
+                    <button class="bg-transparent px-3 py-2 uppercase rounded-none">
+                        Buy
+                    </button>
+                    <button class="bg-transparent px-3 py-2 uppercase rounded-tr-xl">
+                        Sell
+                    </button>
+                </div>
+                <div
+                    class="flex flex-col py-2 rounded-b-xl rounded-tr-xl backdrop-blur-sm bg-white/80 ">
+                    <div class="px-3 flex-1">
+                        <span class="lg:text-base md:text-base text-sm custom-font-lufga-semibold">
+                            Location
+                        </span>
+                        <div class="text-xs flex">
+                            <div class="flex-1 text-gray-500 custom-font-lufga-regular">
+                                Select Your City
+                            </div>
+                            <div class="flex-none">
+                                <img class="w-auto h-auto" src="./assets/img/section_1/img_2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 flex-1 ">
+                        <span class="custom-font-lufga-semibold text-sm">
+                            Property Type
+                        </span>
+                        <div class="text-xs flex">
+                            <div class="flex-1 text-gray-500 custom-font-lufga-regular">
+                                Choose Property Type
+                            </div>
+                            <div class="flex-none">
+                                <img class="w-auto h-auto"
+                                    src="./assets/img/section_1/img_4.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 flex-1">
+                        <span class="custom-font-lufga-semibold text-sm">
+                            Price Range
+                        </span>
+                        <div class="custom-font-lufga-regular text-gray-500 text-xs">
+                            Choose Price Range
+                        </div>
+                    </div>
+                    <div class="px-3 flex-none">
+                        <div
+                            class="flex justify-end items-center">
+                            <button
+                                class="bg-[#1DAEFF] rounded-lg px-6 py-2">
+                                <img class="h-auto w-3" src="./assets/img/section_1/img_3.svg"
+                                    alt="">
+
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- Endd Section One.Two -->
+
         <!-- Section two -->
         <section class="lg:max-w-5xl max-w-xl h-auto mx-auto relative my-20">
             <div class="lg:w-2/5 md:w-1/2 sm:w-2/5 w-3/5 mb-12 flex flex-col justify-center mx-auto">
                 <div class="custom-font-lufga-semibold lg:text-3xl md:text-2xl text-xl text-center leading-relaxed"
-                 style="line-height: 2.5rem;">
+                    style="line-height: 2.5rem;">
                     We are available in many
                     well-known countries
                 </div>
@@ -507,14 +593,13 @@
                 <div class="lg:py-28 lg:px-20 md:py-16 md:px-6 sm:py-12 sm:px-3 py-12 px-2">
                     <div class="flex flex-wrap flex-col p-3">
                         <div class="flex-1 lg:w-2/5 md:w-3/5 sm:w-3/5 w-full h-max lg:mb-10 md:mb-10 sm:mb-3 mb-2">
-                            <div class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl custom-font-lufga-semibold" 
+                            <div class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl custom-font-lufga-semibold"
                                 style="line-height: 4rem;">
                                 Find your best
                                 Real Estate
                             </div>
                         </div>
-                        <div
-                            class="flex-1 custom-font-lufga-regular lg:text-lg md:text-lg text-sm lg:w-2/5 md:w-2/5 sm:w-2/5 w-3/4 h-max leading-relaxed lg:mb-10 md:mb-10 sm:mb-3 mb-2" 
+                        <div class="flex-1 custom-font-lufga-regular lg:text-lg md:text-lg text-sm lg:w-2/5 md:w-2/5 sm:w-2/5 w-3/4 h-max leading-relaxed lg:mb-10 md:mb-10 sm:mb-3 mb-2"
                             style="line-height: 2rem;">
                             We provide a complete service for the sale,
                             purchase or rental of real estate.
