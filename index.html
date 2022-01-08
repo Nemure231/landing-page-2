@@ -4,11 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./assets/base/tailwindcss/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./assets/custom/style/font.css"> -->
+
+    <style>
+        @font-face {
+            font-family: 'lufga-m';
+            src: url('./assets/font/lufga/lufga_medium.otf') format("opentype");
+        }
+
+        @font-face {
+            font-family: 'lufga-sb';
+            src: url('./assets/font/lufga/lufga_semibold.otf') format("opentype");
+        }
+        @font-face {
+            font-family: 'lufga-r';
+            src: url('./assets/font/lufga/lufga_regular.otf') format("opentype");
+        }
+
+        .custom-font-lufga-medium {
+            font-family: 'lufga-m';
+        }
+
+        .custom-font-lufga-semibold {
+            font-family: 'lufga-sb';
+        }
+
+        .custom-font-lufga-regular {
+            font-family: 'lufga-r';
+        }
+    </style>
+
 </head>
+
+
 
 <body class="bg-white mx-auto h-auto w-full flex flex-wrap flex-col justify-center">
 
@@ -20,9 +53,9 @@
                 </div>
             </div>
             <div
-                class="lg:mt-0 md:mt-0 mt-5 flex-1 lg:order-2 md:order-2 order-3 lg:basis-1/2 md:basis-[70%] basis-full font-light w-full">
+                class="lg:mt-0 md:mt-0 mt-5 flex-1 lg:order-2 md:order-2 order-3 lg:basis-1/2 md:basis-[70%] basis-full w-full">
                 <div
-                    class="flex flex-wrap lg:space-x-12 md:space-x-12 sm:space-x-12 space-x-7 lg:justify-end justify-center items-center uppercase lg:text-sm md:text-sm sm:text-sm text-xs">
+                    class="custom-font-lufga-medium uppercase flex flex-wrap lg:space-x-12 md:space-x-12 sm:space-x-12 space-x-7 lg:justify-end justify-center items-center lg:text-sm md:text-sm sm:text-sm text-xs">
                     <a href="./index.html" class="">
                         Home
                     </a>
@@ -41,7 +74,7 @@
             <div class="flex-none lg:pl-12 pl-0 lg:order-3 md:order-3 order-2 lg:basis-1/4 md:basis-[15%] basis-1/2">
                 <div class="flex lg:justify-start md:justify-center justify-end">
                     <button
-                        class="uppercase lg:text-sm md:text-sm sm:text-sm text-xs text-[#1DAEFF] font-light bg-transparent py-1 px-6 rounded-lg border border-[#1DAEFF]">
+                        class="custom-font-lufga-semibold  uppercase lg:text-sm md:text-sm sm:text-sm text-xs text-[#1DAEFF] bg-transparent py-2 px-7 rounded-lg border border-[#1DAEFF]">
                         Log In
                     </button>
                 </div>
@@ -56,20 +89,21 @@
                 style="background-image: url('./assets/img/section_1/img_1.png');">
                 <div class="lg:py-28 lg:px-20 md:py-16 md:px-6 sm:py-12 sm:px-6 py-12 px-3">
                     <div class="flex flex-wrap flex-col p-3">
-                        <div class="flex-1 lg:w-1/2 md:w-3/5 sm:w-3/5 w-full h-max lg:mb-10 md:mb-10 sm:mb-3 mb-2">
-                            <h1 class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-medium leading-snug">
-                                Easy way to find a
-                                perfect property
+                        <div class="lg:w-1/2 md:w-3/5 sm:w-3/5 w-full h-auto lg:mb-10 md:mb-10 sm:mb-3 mb-2">
+                            <h1 class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl custom-font-lufga-semibol" 
+                                style="line-height: 4rem;">
+                                Easy way to find a perfect property
                             </h1>
                         </div>
                         <div
-                            class="flex-1 font-light lg:text-lg md:text-lg text-sm lg:w-2/5 md:w-2/5 sm:w-2/5 w-3/4 h-max leading-relaxed lg:mb-10 md:mb-10 sm:mb-3 mb-2">
+                            class="flex-1 custom-font-lufga-regular lg:text-lg md:text-lg text-sm lg:w-2/5 md:w-2/5 sm:w-2/5 w-3/4 h-max leading-relaxed lg:mb-10 md:mb-10 sm:mb-3 mb-2" 
+                            style="line-height: 2rem;">
                             We provide a complete service for the sale,
                             purchase or rental of real estate.
                         </div>
 
                         <div class="flex-1 lg:w-11/12 md:w-11/12 w-full">
-                            <div class="flex flex-row font-light lg:text-sm md:text-sm text-xs">
+                            <div class="flex flex-row font-light lg:text-sm md:text-sm text-xs custom-font-lufga-medium">
                                 <button class="bg-white lg:px-6 md:px-6 px-3 py-2 uppercase rounded-t-xl">
                                     Rent
                                 </button>
@@ -83,11 +117,11 @@
                             <div
                                 class="flex lg:flex-row md:flex-row sm:flex-row flex-col lg:py-4 md:py-4 py-2 rounded-b-xl rounded-tr-xl backdrop-blur-sm bg-white/80 ">
                                 <div class="lg:px-6 md:px-6 px-3 flex-1 border-r-2 border-gray-500/25">
-                                    <span class="font-semibold lg:text-base md:text-base text-sm">
+                                    <span class="lg:text-base md:text-base text-sm custom-font-lufga-semibold">
                                         Location
                                     </span>
-                                    <div class="font-light lg:text-sm md:text-sm text-xs flex">
-                                        <div class="flex-1">
+                                    <div class="lg:text-sm md:text-sm text-xs flex">
+                                        <div class="flex-1 text-gray-500 custom-font-lufga-regular">
                                             Select Your City
                                         </div>
                                         <div class="flex-none">
@@ -96,24 +130,24 @@
                                     </div>
                                 </div>
                                 <div class="lg:px-6 md:px-6 px-3 flex-1 border-r-2 border-gray-500/10">
-                                    <span class="font-semibold lg:text-base md:text-base text-sm">
+                                    <span class="custom-font-lufga-semibold lg:text-base md:text-base text-sm">
                                         Property Type
                                     </span>
                                     <div class="font-light lg:text-sm md:text-sm text-xs flex">
-                                        <div class="flex-1">
+                                        <div class="flex-1 text-gray-500 custom-font-lufga-regular">
                                             Choose Property Type
                                         </div>
                                         <div class="flex-none">
-                                            <img class="lg:w-auto lg:h-auto md:w-auto md:w-auto w-auto h-auto"
+                                            <img class="lg:w-auto lg:h-auto md:w-auto w-auto h-auto"
                                                 src="./assets/img/section_1/img_4.svg" alt="">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="lg:px-6 md:px-6 px-3 flex-1">
-                                    <span class="font-semibold lg:text-base md:text-base text-sm">
+                                    <span class="custom-font-lufga-semibold lg:text-base md:text-base text-sm">
                                         Price Range
                                     </span>
-                                    <div class="font-light lg:text-sm md:text-sm text-xs">
+                                    <div class="custom-font-lufga-regular text-gray-500 lg:text-sm md:text-sm text-xs">
                                         Choose Price Range
                                     </div>
                                 </div>
@@ -121,7 +155,7 @@
                                     <div
                                         class="flex lg:justify-center md:justify-center sm:justify-center justify-end items-center">
                                         <button
-                                            class="bg-blue-400 rounded-lg lg:py-3 lg:px-3 md:py-3 md:px-3 sm:py-3 sm:px-3 px-6 py-2">
+                                            class="bg-[#1DAEFF] rounded-lg lg:py-3 lg:px-3 md:py-3 md:px-3 sm:py-3 sm:px-3 px-6 py-2">
                                             <!-- <div class="flex "> -->
                                             <img class="h-auto lg:w-4 md:w-4 sm:w-4 w-3"
                                                 src="./assets/img/section_1/img_3.svg" alt="">
@@ -144,13 +178,13 @@
         <!-- Section two -->
         <section class="lg:max-w-5xl max-w-xl h-auto mx-auto relative my-20">
             <div class="lg:w-2/5 md:w-1/2 sm:w-2/5 w-3/5 mb-12 flex flex-col justify-center mx-auto">
-                <div class="font-medium lg:text-3xl md:text-2xl text-xl text-center ">
+                <div class="custom-font-lufga-semibold lg:text-3xl md:text-2xl text-xl text-center leading-relaxed">
                     We are available in many
                     well-known countries
                 </div>
             </div>
             <div
-                class="grid lg:grid-cols-4 grid-cols-2 lg:gap-x-4 lg:gap-y-4 gap-x-0 gap-y-6 justify-items-center font-semibold lg:text-base md:text-base text-sm tracking-[0.3em]">
+                class="grid lg:grid-cols-4 grid-cols-2 lg:gap-x-4 lg:gap-y-4 gap-x-0 gap-y-6 justify-items-center custom-font-lufga-semibold lg:text-base md:text-base text-sm tracking-[0.3em]">
                 <div class="p-8 bg-cover bg-no-repeat lg:h-80 lg:w-52 md:h-80 md:w-52 sm:h-72 sm:w-48 h-64 w-40 rounded-3xl text-center"
                     style="background-image: url('./assets/img/section_2/img_1.png');">
                     <span class="antialiased uppercase">
@@ -182,11 +216,11 @@
 
         <!-- Section Three -->
         <section class="lg:max-w-5xl max-w-xl h-auto mx-auto relative my-20">
-            <div class="lg:px-4 md:px-10 px-11 flex justify-between mb-6">
-                <div class="font-medium lg:text-3xl md:text-2xl text-xl">
+            <div class="custom-font-lufga-medium lg:px-4 md:px-10 px-11 flex justify-between mb-6">
+                <div class="lg:text-3xl md:text-2xl text-xl">
                     Recently Added
                 </div>
-                <a href="#" class="text-blue-400 font-medium">
+                <a href="#" class="text-blue-400">
                     See All
                 </a>
             </div>
@@ -199,25 +233,25 @@
                         </div>
                         <div class="flex-initial">
                             <div class="flex flex-row flex-wrap">
-                                <span class="basis-full lg:text-xl text-lg font-medium mb-5">
+                                <span class="basis-full lg:text-xl text-lg custom-font-lufga-semibold mb-5">
                                     103/143 West Street,
                                     Crows Nest
                                 </span>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-2/5 lg:text-sm md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-2/5 lg:text-sm md:text-xs sm:text-xs text-sm text-gray-500">
                                     10 bedroom
                                 </div>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-1/5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-1/5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
                                     150 M
                                 </div>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-2/5 mb-5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-2/5 mb-5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
                                     2 Garage
                                 </div>
 
                                 <div
-                                    class="lg:basis-3/4 basis-full lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="lg:basis-3/4 basis-full lg:text-sm custom-font-lufga-medium md:text-xs sm:text-xs text-sm text-gray-500">
                                     Posted by X Builder
                                 </div>
                                 <div class="lg:basis-1/5 basis-full text-sm lg:mt-0 mt-3">
@@ -244,25 +278,25 @@
                         </div>
                         <div class="flex-initial">
                             <div class="flex flex-row flex-wrap">
-                                <span class="basis-full lg:text-xl text-lg font-medium mb-5">
+                                <span class="basis-full lg:text-xl text-lg custom-font-lufga-semibold mb-5">
                                     103/143 West Street,
                                     Crows Nest
                                 </span>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-2/5 lg:text-sm md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-2/5 lg:text-sm md:text-xs sm:text-xs text-sm text-gray-500">
                                     10 bedroom
                                 </div>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-1/5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-1/5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
                                     150 M
                                 </div>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-2/5 mb-5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-2/5 mb-5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
                                     2 Garage
                                 </div>
 
                                 <div
-                                    class="lg:basis-3/4 basis-full lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="lg:basis-3/4 basis-full lg:text-sm custom-font-lufga-medium md:text-xs sm:text-xs text-sm text-gray-500">
                                     Posted by X Builder
                                 </div>
                                 <div class="lg:basis-1/5 basis-full text-sm lg:mt-0 mt-3">
@@ -288,25 +322,25 @@
                         </div>
                         <div class="flex-initial">
                             <div class="flex flex-row flex-wrap">
-                                <span class="basis-full lg:text-xl text-lg font-medium mb-5">
+                                <span class="basis-full lg:text-xl text-lg custom-font-lufga-semibold mb-5">
                                     103/143 West Street,
                                     Crows Nest
                                 </span>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-2/5 lg:text-sm md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-2/5 lg:text-sm md:text-xs sm:text-xs text-sm text-gray-500">
                                     10 bedroom
                                 </div>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-1/5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-1/5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
                                     150 M
                                 </div>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-2/5 mb-5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-2/5 mb-5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
                                     2 Garage
                                 </div>
 
                                 <div
-                                    class="lg:basis-3/4 basis-full lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="lg:basis-3/4 basis-full lg:text-sm custom-font-lufga-medium md:text-xs sm:text-xs text-sm text-gray-500">
                                     Posted by X Builder
                                 </div>
                                 <div class="lg:basis-1/5 basis-full text-sm lg:mt-0 mt-3">
@@ -332,25 +366,25 @@
                         </div>
                         <div class="flex-initial">
                             <div class="flex flex-row flex-wrap">
-                                <span class="basis-full lg:text-xl text-lg font-medium mb-5">
+                                <span class="basis-full lg:text-xl text-lg custom-font-lufga-semibold mb-5">
                                     103/143 West Street,
                                     Crows Nest
                                 </span>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-2/5 lg:text-sm md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-2/5 lg:text-sm md:text-xs sm:text-xs text-sm text-gray-500">
                                     10 bedroom
                                 </div>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-1/5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-1/5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
                                     150 M
                                 </div>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-2/5 mb-5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-2/5 mb-5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
                                     2 Garage
                                 </div>
 
                                 <div
-                                    class="lg:basis-3/4 basis-full lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="lg:basis-3/4 basis-full lg:text-sm custom-font-lufga-medium md:text-xs sm:text-xs text-sm text-gray-500">
                                     Posted by X Builder
                                 </div>
                                 <div class="lg:basis-1/5 basis-full text-sm lg:mt-0 mt-3">
@@ -377,25 +411,25 @@
                         </div>
                         <div class="flex-initial">
                             <div class="flex flex-row flex-wrap">
-                                <span class="basis-full lg:text-xl text-lg font-medium mb-5">
+                                <span class="basis-full lg:text-xl text-lg custom-font-lufga-semibold mb-5">
                                     103/143 West Street,
                                     Crows Nest
                                 </span>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-2/5 lg:text-sm md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-2/5 lg:text-sm md:text-xs sm:text-xs text-sm text-gray-500">
                                     10 bedroom
                                 </div>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-1/5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-1/5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
                                     150 M
                                 </div>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-2/5 mb-5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-2/5 mb-5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
                                     2 Garage
                                 </div>
 
                                 <div
-                                    class="lg:basis-3/4 basis-full lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="lg:basis-3/4 basis-full lg:text-sm custom-font-lufga-medium md:text-xs sm:text-xs text-sm text-gray-500">
                                     Posted by X Builder
                                 </div>
                                 <div class="lg:basis-1/5 basis-full text-sm lg:mt-0 mt-3">
@@ -421,25 +455,25 @@
                         </div>
                         <div class="flex-initial">
                             <div class="flex flex-row flex-wrap">
-                                <span class="basis-full lg:text-xl text-lg font-medium mb-5">
+                                <span class="basis-full lg:text-xl text-lg custom-font-lufga-semibold mb-5">
                                     103/143 West Street,
                                     Crows Nest
                                 </span>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-2/5 lg:text-sm md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-2/5 lg:text-sm md:text-xs sm:text-xs text-sm text-gray-500">
                                     10 bedroom
                                 </div>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-1/5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-1/5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
                                     150 M
                                 </div>
                                 <div
-                                    class="text-left lg:basis-2/6 basis-2/5 mb-5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="text-left custom-font-lufga-medium lg:basis-2/6 basis-2/5 mb-5 lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
                                     2 Garage
                                 </div>
 
                                 <div
-                                    class="lg:basis-3/4 basis-full lg:text-sm  md:text-xs sm:text-xs text-sm text-gray-500">
+                                    class="lg:basis-3/4 basis-full lg:text-sm custom-font-lufga-medium md:text-xs sm:text-xs text-sm text-gray-500">
                                     Posted by X Builder
                                 </div>
                                 <div class="lg:basis-1/5 basis-full text-sm lg:mt-0 mt-3">
@@ -472,20 +506,20 @@
                 <div class="lg:py-28 lg:px-20 md:py-16 md:px-6 sm:py-12 sm:px-3 py-12 px-2">
                     <div class="flex flex-wrap flex-col p-3">
                         <div class="flex-1 lg:w-2/5 md:w-3/5 sm:w-3/5 w-full h-max lg:mb-10 md:mb-10 sm:mb-3 mb-2">
-                            <div class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-medium leading-snug">
+                            <div class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl custom-font-lufga-semibold leading-snug">
                                 Find your best
                                 Real Estate
                             </div>
                         </div>
                         <div
-                            class="flex-1 font-light lg:text-lg md:text-lg text-sm lg:w-2/5 md:w-2/5 sm:w-2/5 w-3/4 h-max leading-relaxed lg:mb-10 md:mb-10 sm:mb-3 mb-2">
+                            class="flex-1 custom-font-lufga-regular lg:text-lg md:text-lg text-sm lg:w-2/5 md:w-2/5 sm:w-2/5 w-3/4 h-max leading-relaxed lg:mb-10 md:mb-10 sm:mb-3 mb-2">
                             We provide a complete service for the sale,
                             purchase or rental of real estate.
                         </div>
 
                         <div class="flex-1 lg:w-11/12 md:w-11/12 w-full">
                             <button
-                                class="bg-blue-400 lg:py-2 lg:px-8 md:py-2 md:px-8 py-1 px-4 text-white rounded-lg uppercase lg:text-sm md:text-sm text-xs">
+                                class="custom-font-lufga-semibold bg-[#1DAEFF] lg:py-2 lg:px-8 md:py-2 md:px-8 py-1 px-4 text-white rounded-lg uppercase lg:text-sm md:text-sm text-xs">
                                 Contact Us
                             </button>
 
@@ -507,7 +541,7 @@
         <div class="py-16 lg:px-3 px-6 max-w-6xl flex flex-wrap mx-auto justify-between space-y-5">
             <div class="lg:basis-2/6 md:basis-1/2 basis-full lg:order-1 md:order-2 order-4 lg:mt-0 md:mt-6 mt-6">
                 <img class="w-36 h-auto mb-5" src="./assets/img/nav/Logo.svg" alt="" srcset="">
-                <p class=" text-sm font-light leading-loose mb-8 text-gray-500">
+                <p class=" text-sm custom-font-lufga-regular leading-loose mb-8 text-gray-500">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
@@ -520,7 +554,7 @@
                     <img src="./assets/img/footer/img_4.svg" alt="LinkedIn">
                 </div>
 
-                <small class="text-gray-500">
+                <small class="text-gray-500 custom-font-lufga-regular">
                     © 2021 . All rights reserved.
                 </small>
             </div>
@@ -535,35 +569,37 @@
                 </ul>
             </div>
             <div class="lg:basis-1/5 md:basis-1/4 basis-1/2 lg:order-3 md:order-4 order-3">
-                <span class="font-medium">Our Company</span>
-                <ul class="list-none text-sm space-y-6 mt-6">
+                <span class="custom-font-lufga-semibold">Our Company</span>
+                <ul class="list-none text-sm space-y-6 mt-6 custom-font-lufga-regular">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Agents</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Media</a></li>
                     <li><a href="#">Contact Us</a></li>
-      
+
                 </ul>
             </div>
 
             <div class="lg:basis-1/5 basis-full lg:text-left text-center lg:order-4 order-1">
-                <span class="font-medium">Subscribe</span>
-                <p class="text-sm font-light text-gray-500 mt-6">
+                <span class="custom-font-lufga-semibold">Subscribe</span>
+                <p class=" custom-font-lufga-regular text-sm text-gray-500 mt-6">
                     Subscribe to get latest property, blog news from us
                 </p>
                 <div class="flex flex-row items-center mt-6 lg:mx-0 md:mx-28 sm:mx-28 mx-6">
-                    <input type="text" class="flex-1 pl-2 pr-12 py-3 rounded-lg border border-gray-400 apperace-none outline-none text-gray-500 text-sm" placeholder="Email Address">
+                    <input type="text"
+                        class="flex-1 pl-2 pr-12 py-3 rounded-lg border border-gray-400 apperace-none outline-none text-gray-500 text-sm"
+                        placeholder="Email Address">
                     <div class="flex-none -ml-10">
                         <button class="h-8 w-8 bg-blue-400 rounded-full flex items-center justify-center">
-                                <img class=""src="./assets/img/footer/img_5.svg" alt="">
+                            <img class="" src="./assets/img/footer/img_5.svg" alt="">
                         </button>
                     </div>
                 </div>
-               
+
             </div>
 
         </div>
-       
+
 
     </footer>
 
